@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fabi Barbershop — Turnos</title>
+  <meta name="description" content="Reservá turnos en Fabi Barbershop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-wood">
+<header class="header">
+  <div class="container nav">
+    <div class="brand">
+      <img class="logo" src="assets/logo_fabi.jpg" alt="Logo Fabi Barbershop" />
+      <div class="brand-text">
+        <h1 class="title">Fabi Barbershop</h1>
+        <p class="subtitle">Turnos online</p>
+      </div>
+    </div>
+    <a class="link" href="admin.html">Panel</a>
+  </div>
+</header>
+
+<main class="container">
+  <section class="card shadow">
+    <h2 class="h2">Reservá tu turno</h2>
+    <div class="grid">
+      <label class="field">
+        <span class="label">Fecha</span>
+        <input id="date" type="date" inputmode="numeric" />
+      </label>
+      <label class="field">
+        <span class="label">Horario</span>
+        <select id="slot" aria-label="Horario disponible"></select>
+      </label>
+      <label class="field">
+        <span class="label">Nombre</span>
+        <input id="name" type="text" placeholder="Tu nombre" autocomplete="name" />
+      </label>
+      <label class="field">
+        <span class="label">WhatsApp</span>
+        <input id="phone" type="tel" placeholder="+54 9 ..." autocomplete="tel" />
+      </label>
+      <label class="field">
+        <span class="label">Servicio</span>
+        <select id="service"></select>
+      </label>
+      <label class="field">
+        <span class="label">Pago</span>
+        <select id="payment">
+          <option value="efectivo">Efectivo</option>
+          <option value="mp">Mercado Pago</option>
+        </select>
+      </label>
+      <div class="price">
+        <span>Precio:</span>
+        <strong id="price">$0</strong>
+      </div>
+    </div>
+    <button id="bookBtn" class="btn">Reservar</button>
+    <div id="confirm" class="confirm hidden" role="status" aria-live="polite"></div>
+    <div id="emptyNotice" class="muted hidden">No hay turnos cargados para esta fecha todavía.</div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container small">
+    © <span id="year"></span> Fabi Barbershop · Sistema por AMR WEBS
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
