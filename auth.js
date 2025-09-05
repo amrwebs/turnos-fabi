@@ -33,7 +33,7 @@ function handleLoginSubmit(event) {
 
   if (u === DEMO_USER && p === DEMO_PASS) {
     setSession();
-    window.location.href = "admin_fabi.html"; // redirige al panel completo
+    window.location.href = "admin.html"; // redirige al panel completo
   } else {
     const msg = document.getElementById("login-msg");
     msg.textContent = "Usuario o contraseña incorrectos";
