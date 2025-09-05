@@ -1,7 +1,7 @@
 
 // ⚠️ Demo: credenciales hardcodeadas. Cambiá aquí o tomalas de tu backend cuando lo tengas.
 const DEMO_USER = "Fabian Allende";
-const DEMO_PASS = "200924";
+const DEMO_PASS = "201224";
 
 function setSession() {
   localStorage.setItem("fabi_auth_token", "ok");
